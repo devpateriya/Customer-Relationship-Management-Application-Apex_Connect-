@@ -1,42 +1,97 @@
-Apex Connect
-Live Demo: [Link to be added after deployment]
+# Apex Connect – Customer Relationship Management (CRM) System
 
-I built Apex Connect as a full-featured CRM to manage client relationships, track business activities, and streamline sales workflows. It's a complete web application with a Java Spring Boot backend and a dynamic Thymeleaf frontend.
+Apex Connect is a role-based Customer Relationship Management (CRM) system built using *Java* and *Spring Boot*.  
+The application is designed to manage the complete client lifecycle, enforce role-based access control, handle business workflows, and generate documents — similar to real-world enterprise CRM systems.
 
-The main goal of this project was to build a real-world application from the ground up, handling everything from database design and security to the user interface.
+---
 
-What it Can Do
-User & Role Management: Different employees (admins, managers, standard users) have different permissions.
+## 🚀 Why This Project?
 
-Full Client Lifecycle: You can add new leads, update their status, and manage them as they become customers.
+This project was built to simulate a *production-style backend application* by handling:
 
-Data Tools: Easily import client lists from a CSV or export search results as a PDF.
+- Authentication and authorization
+- Business rules based on user roles
+- Secure data access and workflows
+- Bulk data import/export
+- Document generation
+- Event-based notifications
 
-Contracts & Events: Create and manage client contracts, and schedule events like meetings or calls.
+It demonstrates how backend systems are structured and managed in real-world software products.
 
-Notifications: Get reminders for upcoming events.
+---
 
-API Access: A simple REST API is available for interacting with client data.
+## ✨ Key Features
 
-Tech Stack
-Backend: Java 8, Spring Boot, Spring Data JPA, Hibernate, Spring Security
+- Role-based authentication and authorization using Spring Security  
+  (Admin, Manager, Employee)
 
-Frontend: Thymeleaf, HTML, CSS, JavaScript
+- User and client management with strict access control
 
-Database: MySQL
+- Complete client lifecycle management  
+  (Leads → Customers)
 
-Key Libraries: Lombok, OpenCSV, iText
+- Contract creation and approval workflow based on contract value and user role
 
-Getting it Running Locally
-You'll need Java 8, Maven, and MySQL installed.
+- CSV import/export for bulk client data processing
 
-Create a new MySQL database for the project.
+- PDF generation for contracts and reports
 
-Update the database name, username, the passwordn/resources/application.properties.
+- Event scheduling with daily notification system
 
-Run the application using the main class in CrmApplication.java.
+- REST API for client-related operations
 
-The application will be accessible at http://localhost:7777.
+---
 
-Developer
-Dev Pateriya
+## 🛠 Tech Stack
+
+### Backend
+- Java 8
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- Spring Security
+
+### Frontend
+- Thymeleaf
+- HTML
+- CSS
+- JavaScript
+
+### Database
+- MySQL
+
+### Libraries & Tools
+- Lombok
+- OpenCSV
+- iText
+- JUnit
+- Maven
+
+---
+
+## 🌐 Live Demo
+
+🔗 https://apex-connect-11.onrender.com/
+
+> ⚠ Note: Initial load may take a few seconds as the application is hosted on a free-tier service.
+
+---
+
+## 🔗 REST API
+
+Apex Connect exposes a REST API for client-related operations, enabling integration with external systems or frontend applications.
+
+---
+
+## ⚙ Getting Started (Local Setup)
+
+### Prerequisites
+- Java 8
+- Maven
+- MySQL
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/devpateriya/Apex_Connect.git
