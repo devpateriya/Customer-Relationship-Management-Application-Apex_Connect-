@@ -15,4 +15,4 @@ RUN mvn clean install -DskipTests
 # 5. This is the final, correct command to start your application.
 # It directly provides the NEW database credentials, bypassing all other configuration.
 # The "-Dserver.port=${PORT}" line is a special instruction for Render to use the correct network port.
-CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar -Dserver.port=${PORT} --spring.datasource.url=jdbc:postgresql://dpg-d556mlp5pdvs73bv16cg-a/apex_db_january --spring.datasource.username=apex_db_january_user --spring.datasource.password=60EyBi8RkPqLSiGBVkcALIDcnozOaejb
+CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar -Dserver.port=${PORT} --spring.datasource.url=jdbc:postgresql://dpg-d5pk8ckhg0os739kl1s0-a/apex_db_january_1nom --spring.datasource.username=apex_db_january_1nom_user --spring.datasource.password=ttBcy9q7fXln5ylkpomWCsmcyD7ppNBx --spring.jpa.hibernate.ddl-auto=create
