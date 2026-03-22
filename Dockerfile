@@ -12,4 +12,4 @@ RUN mvn clean install -DskipTests
 
 # 5. Updated command for the March Database
 # Note: Changed URL, Username, Password, and ensured ddl-auto is set to 'create' for the first run.
-CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar -Dserver.port=${PORT} --spring.datasource.url=jdbc:postgresql://dpg-d6tvdfndiees73d7apug-a/apex_db_march --spring.datasource.username=apex_db_march_user --spring.datasource.password=G2RkGIdK9I2nJ8hp1Kq4lfhtK98jN3qy --spring.jpa.hibernate.ddl-auto=create
+CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar -Dserver.port=${PORT} --spring.datasource.url=jdbc:postgresql://dpg-d6tvdfndiees73d7apug-a/apex_db_march --spring.datasource.username=apex_db_march_user --spring.datasource.password=G2RkGIdK9I2nJ8hp1Kq4lfhtK98jN3qy --spring.jpa.hibernate.ddl-auto=update
