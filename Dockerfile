@@ -17,4 +17,4 @@ CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar \
     --spring.datasource.url=jdbc:postgresql://dpg-d7pf7tsvikkc73adgulg-a/apex_connect_db_0t7m \
     --spring.datasource.username=apex_connect_db_0t7m_user \
     --spring.datasource.password=ddt4EeZ2qjqUsSxEbjymtQYh90ig4lgK \
-    --spring.jpa.hibernate.ddl-auto=create
+    --spring.jpa.hibernate.ddl-auto=update
