@@ -14,7 +14,7 @@ RUN mvn clean install -DskipTests
 # Note: Using Internal URL for Render-to-Render communication and ddl-auto=create for schema generation.
 CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar \
     -Dserver.port=${PORT} \
-    --spring.datasource.url=jdbc:postgresql://dpg-d7pf7tsvikkc73adgulg-a/apex_connect_db_0t7m \
-    --spring.datasource.username=apex_connect_db_0t7m_user \
-    --spring.datasource.password=ddt4EeZ2qjqUsSxEbjymtQYh90ig4lgK \
-    --spring.jpa.hibernate.ddl-auto=update
+    --spring.datasource.url=jdbc:postgresql://dpg-d8kmprldt1ts73a86910-a/major_project_db_ty46 \
+    --spring.datasource.username=major_project_db_ty46_user \
+    --spring.datasource.password=GSruazFDmfV0J41hYXoaknL09FZEFLLq \
+    --spring.jpa.hibernate.ddl-auto=create
