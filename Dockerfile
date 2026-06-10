@@ -17,4 +17,4 @@ CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar \
     --spring.datasource.url=jdbc:postgresql://dpg-d8kmprldt1ts73a86910-a/major_project_db_ty46 \
     --spring.datasource.username=major_project_db_ty46_user \
     --spring.datasource.password=GSruazFDmfV0J41hYXoaknL09FZEFLLq \
-    --spring.jpa.hibernate.ddl-auto=create
+    --spring.jpa.hibernate.ddl-auto=update
