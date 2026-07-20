@@ -17,4 +17,4 @@ CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar \
     --spring.datasource.url=jdbc:postgresql://dpg-d9dkh0beo5us73bset00-a/crmdb_0223 \
     --spring.datasource.username=crmdb_0223_user \
     --spring.datasource.password=tdkCtEPUaXCRArpVBN8Xz02BQlKdNlF1 \
-    --spring.jpa.hibernate.ddl-auto=create
+    --spring.jpa.hibernate.ddl-auto=update
