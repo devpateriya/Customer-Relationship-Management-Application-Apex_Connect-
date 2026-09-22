@@ -10,11 +10,12 @@ COPY . .
 # 4. Run the Maven build command and skip the tests
 RUN mvn clean install -DskipTests
 
-# 5. Updated command for the New Database Instance
-# Note: Uses the internal database host for Render-to-Render communication
-CMD java -Xmx350m -jar target/client-relation-manager-1.0.0.jar \
+# 5. Start the application with the new Render database
+# Uses the internal database host for Render-to-Render communication
+CMD java -Xmx350m \
     -Dserver.port=${PORT} \
-    --spring.datasource.url=jdbc:postgresql://dpg-d9dkh0beo5us73bset00-a/crmdb_0223 \
-    --spring.datasource.username=crmdb_0223_user \
-    --spring.datasource.password=tdkCtEPUaXCRArpVBN8Xz02BQlKdNlF1 \
-    --spring.jpa.hibernate.ddl-auto=update
+    -jar target/client-relation-manager-1.0.0.jar \
+    --spring.datasource.url=jdbc:postgresql://dpg-dap1hj80cd8s73bdn2jg-a/crmdbsept \
+    --spring.datasource.username=crmdbsept_user \
+    --spring.datasource.password=Yp0EaXQGeOTr2YdyAmBOEBynhhE609sM \
+    --spring.jpa.hibernate.ddl-auto=create
