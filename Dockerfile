@@ -1,21 +1,22 @@
-# 1. Start with a pre-built environment that has Java 8 and Maven
+
+# 1. Start with Java 8 and Maven
 FROM maven:3.8.5-openjdk-8
 
 # 2. Set the working directory
 WORKDIR /app
 
-# 3. Copy all of your project files
+# 3. Copy project files
 COPY . .
 
-# 4. Run the Maven build command and skip the tests
+# 4. Build the Maven project and skip tests
 RUN mvn clean install -DskipTests
 
-# 5. Start the application with the new Render database
-# Uses the internal database host for Render-to-Render communication
+# 5. Start the application with the new Render PostgreSQL database
 CMD java -Xmx350m \
     -Dserver.port=${PORT} \
     -jar target/client-relation-manager-1.0.0.jar \
-    --spring.datasource.url=jdbc:postgresql://dpg-dap1hj80cd8s73bdn2jg-a/crmdbsept \
-    --spring.datasource.username=crmdbsept_user \
-    --spring.datasource.password=Yp0EaXQGeOTr2YdyAmBOEBynhhE609sM \
+    --spring.datasource.url=jdbc:postgresql://dpg-dc0mqqp42hec73bt9nsg-a:5432/crmdbnov \
+    --spring.datasource.username=crmdbnov_user \
+    --spring.datasource.password=Jka8y8h2H0gs8NkzoOpc2UNPWlpqLA5R \
     --spring.jpa.hibernate.ddl-auto=update
+
