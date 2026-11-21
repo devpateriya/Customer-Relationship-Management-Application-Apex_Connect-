@@ -20,4 +20,6 @@ CMD java -Xmx350m \
     --spring.datasource.username=crmdbnov_user \
     --spring.datasource.password=Jka8y8h2H0gs8NkzoOpc2UNPWlpqLA5R \
     --spring.jpa.hibernate.ddl-auto=create
+
+
     
