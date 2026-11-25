@@ -17,5 +17,5 @@ CMD java -Xmx350m \
     --spring.datasource.url=jdbc:postgresql://dpg-dc0mqqp42hec73bt9nsg-a/crmdbnov \
     --spring.datasource.username=crmdbnov_user \
     --spring.datasource.password=Jka8y8h2H0gs8NkzoOpc2UNPWlpqLA5R \
-    --spring.jpa.hibernate.ddl-auto=create
+    --spring.jpa.hibernate.ddl-auto=update
     
